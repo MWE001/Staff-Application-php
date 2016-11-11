@@ -36,7 +36,7 @@ class Application extends CodonModule
 				# Make sure they entered an email address
 				if(trim($this->post->name) == '' || trim($this->post->email) == '') {
 					$this->set('message', 'You must enter a name and email!');
-					$this->render('core_error.tpl');
+					$this->render('core_error.php');
 					return;
 				}
 			}
