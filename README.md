@@ -2,6 +2,7 @@
 php version
 
 Staff Application v.2.0 Module
+v2.0 release by MWE001 (Ray Browell)Staff Application phpVMS version for Simpilt's phpVMS version 5.5
 
 * phpVMS Module for pilots to submit a staff application sent via email
  *This module is released under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License
