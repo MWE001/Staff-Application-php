@@ -64,7 +64,7 @@ class Application extends CodonModule
 			if($this->post->subject == '' || trim($this->post->message) == '')
 			
 			
-			$subject = 'New application from '.$this->post->name.' ';
+			$subject = 'New message from '.$this->post->name.'';
 			$message = DB::escape($this->post->message) . PHP_EOL . PHP_EOL;
 			$positions = DB::escape($this->post->positions) . PHP_EOL . PHP_EOL;
 			
