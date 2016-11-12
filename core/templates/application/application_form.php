@@ -1,16 +1,16 @@
 <?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
-<p>
-<h2>Staff Application</h2>
-</p>
-<p>
-Thank you for your interest in a staff position at <?php echo SITE_NAME; ?>. Please complete the following form and fill out all fields. Our careers team will get back to you within 48 hours with a responce.
+<div class="blueIce-layout-cell blueIce-content"><div class="blueIce-block clearfix">
+<div class="blueIce-blockheader">
+<h3 class="t">Staff Application</h3>
+</div>
+<div class="blueIce-blockcontent"><p>
+Thank you for your interest in a staff position at <?php echo SITE_NAME; ?>. Please complete the following form and fill out all fields. Our Human Resources department will get back to you within 48 hours with a responce.
 <hr />
- 
 </p>
 <p>
 <form method="post" action="<?php echo url('/application'); ?>">
 
-  <table width='100%' border='0'>
+  <table width="100%" border="0"class="blueIce_table">
     <tr>
       <td><strong>Name: *</strong></td>
       <td>
@@ -48,34 +48,41 @@ Thank you for your interest in a staff position at <?php echo SITE_NAME; ?>. Ple
 		?>
 		</td>
 	</tr>
-
+	<!-- Do Not remove this hidden input -->
+	<tr>
+		<td><input id="subject" type="text" name="subject" size="25" value="<?php echo $_POST['subject'];?>" style="display: none;" />&nbsp;</td>
+	</tr>
+	<!-- End Hidden Input -->
 	<tr>
 		<td><strong>Position: *</strong></td>
 	<td>
-		<select name="positions">
-		<option value="Chief Executive Officer">Chief Executive Officer</option>
-  		<option value="Cheif Operations Officer">Cheif Operations Officer</option>
+		<select name="positions" style="width: 340px;">
+  		<option value="Chief Operations Officer">Chief Operations Officer</option>
  		<option value="Human Resources">Human Resources</option>
-  		<option value="Flight Dispatcher">Flight Dispatcher</option>
-  		<option value="Webmaster">Webmaster</option>
+  		<option value="Flight Dispatcher">Scheduling Manager</option>
+		<option value="Events Manager">Events Manager</option>
+		<option value="Fleet manager">Fleet manager</option>
+		<option value="Marketing Director">Marketing Director</option>
+		<option value="Focus City manager">Focus City Manager</option>
+  		<option value="ATC">Air Traffic Controller</option>
 		</select></td>
 	</tr>
 
 	<tr>
-		<td><strong>Tell Us About Your Previous VA Experiance: *</strong></td>
-		<td><textarea name="message" cols='45' rows='5'><?php echo $_POST['message'];?></textarea></td>
+		<td width="40%"><strong>Tell Us About Your Previous VA Experience: *</strong></td>
+		<td><textarea name="message1" cols='45' rows='5'><?php echo $_POST['message'];?></textarea></td>
 	
 	</tr>
     <tr>
       <td><strong>Why Should We Choose You For This Position?: *</strong></td>
       <td>
-		<textarea name="message" cols='45' rows='5'><?php echo $_POST['message'];?></textarea>
+		<textarea name="message2" cols='45' rows='5'><?php echo $_POST['message'];?></textarea>
       </td>
     </tr>
     <tr>
       <td><strong>Do You Have Any Real World Experiance?: (Optional)</strong></td>
       <td>
-		<textarea name="message" cols='45' rows='5'><?php echo $_POST['message'];?></textarea>
+		<textarea name="message3" cols='45' rows='5'><?php echo $_POST['message'];?></textarea>
       </td>
     </tr>
     
