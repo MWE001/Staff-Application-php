@@ -66,6 +66,7 @@ class Application extends CodonModule
 			
 			$subject = 'New application from '.$this->post->name.' ';
 			$message = DB::escape($this->post->message) . PHP_EOL . PHP_EOL;
+			$positions = DB::escape($this->post->positions) . PHP_EOL . PHP_EOL;
 			
 			unset($_POST['recaptcha_challenge_field']);
 			unset($_POST['recaptcha_response_field']);
@@ -77,7 +78,7 @@ class Application extends CodonModule
 			
 			$message = nl2br($message);
 			$message = utf8_encode($message);
-			Util::SendEmail(ADMIN_EMAIL, $subject, $message);
+			Util::SendEmail(ADMIN_EMAIL, $subject, $message, $positions);
 			
 			$this->render('application_sent.php');
 			return;
