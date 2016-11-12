@@ -2,7 +2,7 @@
 php version
 
 Staff Application v.2.0 Module
-v2.0 release by MWE001 (Ray Browell)Staff Application phpVMS version for Simpilt's phpVMS version 5.5
+v2.0 release by MWE001 (Ray Browell) Staff Application phpVMS version for Simpilot's phpVMS version 5.5
 
 * phpVMS Module for pilots to submit a staff application sent via email
  *This module is released under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License
@@ -27,7 +27,8 @@ v1.0 original release of the Staff Application module.
 v2.0 release by MWE001 Staff Application phpVMS version for Simpilt's phpVMS version 5.5
 - removed recaptcha from the application form and added nocaptcha recaptcha.
 - changed all tpl files to php for the newer version of phpVMS
--edited all calls to .tpl files to direct to .php files.
+- edited all calls to .tpl files to direct to .php files.
+- i dropped the template files in their own folder.
 
 ##Special Notes
 
