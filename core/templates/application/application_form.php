@@ -37,7 +37,7 @@ Thank you for your interest in a staff position at <?php echo SITE_NAME; ?>. Ple
 		if(Auth::LoggedIn())
 		{
 			echo Auth::$userinfo->pilotid;
-			echo '<input type="hidden" name="name" 
+			echo '<input type="hidden" name="pilotid" 
 					value="'.Auth::$userinfo->pilotid.'" />';
 		}
 		else
