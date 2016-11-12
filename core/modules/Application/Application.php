@@ -56,7 +56,7 @@ class Application extends CodonModule
                         //check if reCaptcha response was valid
                         if ($resp == null) {
                             $this->set('captcha_error', 'reCaptcha Validation Error');
-                            $this->render('application_form.php');
+                            $this->render('application/application_form.php');
                             return;
                         }
                         //end Google reCaptcha
@@ -80,7 +80,7 @@ class Application extends CodonModule
 			$message = utf8_encode($message);
 			Util::SendEmail(ADMIN_EMAIL, $subject, $message, $positions);
 			
-			$this->render('application_sent.php');
+			$this->render('application/application_sent.php');
 			return;
 		}		
 		
@@ -98,7 +98,7 @@ class Application extends CodonModule
 		//echo 'output of $_SESSION: <br />';
 		//print_r($_SESSION);
 		
-		$this->render('application_form.php');
+		$this->render('application/application_form.php');
 	}
 	
 }
