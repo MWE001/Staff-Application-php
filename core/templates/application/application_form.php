@@ -52,7 +52,7 @@ Thank you for your interest in a staff position at <?php echo SITE_NAME; ?>. Ple
 	<tr>
 		<td><strong>Position: *</strong></td>
 	<td>
-		<select>
+		<select name="positions">
 		<option value="Chief Executive Officer">Chief Executive Officer</option>
   		<option value="Cheif Operations Officer">Cheif Operations Officer</option>
  		<option value="Human Resources">Human Resources</option>
